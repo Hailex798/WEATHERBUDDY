@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {{>headMeta}}
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    {{>navbar}}
+    <!-- HEADER SECTION-->
+    <div class="container-fluid main_header">
+      <div class="row">
+        <div class="col-md-10 col-12 mx-auto">
+          {{!-- SEARCH BAR --}}
+          <div class="main_content">
+            <form class="searchBar">
+              <i class="fa fa-search"></i>
+              <input type="text" class="form-control form-input" placeholder="Search anything...">
+              <span class="left-pan align-items-center"><i class="fa fa-microphone"></i></span>
+            </form>
+          </div>
+          {{!-- WEATHER INFO --}}
+          <div class="tempInformation">
+            <div class="top_layer">
+              <p id= "day">Tuesday </p>
+              <p id="today_data">13 OCT</p>
+            </div>
+            <div class="main_layer">
+              <p id="city_name">Get Output Here≤/p>
+              <div class="middle_layer data_hide">
+                <p id="temp"><span>0</span><sup>o</sup>C</p>
+                <p id="temp_status"> <i class="fa fa-cloud" aria-hidden="true"></i></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- FOOTER SECTION-->
+    {{>footer}}
+  </body>
+  <script src="js/index.js"></script>
+</html>

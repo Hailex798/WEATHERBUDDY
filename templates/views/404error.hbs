@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {{>headMeta}}
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    {{>navbar}}
+    <!-- HEADER SECTION-->
+    <div class="container-fluid main_header">
+      <div class="row">
+        <div class="col-md-10 col-12 mx-auto">
+          <div class="row">
+            <!-- HEADER CONTENT -->
+            <div class="col-md-12 col-12 main_header_left my-auto align-items-center">
+                <figure class="errorImg">
+                    <img src="images/error.png" alt="404" class="img-fluid">
+                </figure>
+                <h1>{{errorMsg}}</h1>
+                <a href="/"><button class="wea_btn">Go Back</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- FOOTER SECTION-->
+    {{>footer}}
+  </body>
+  <script src="js/index.js"></script>
+</html>
