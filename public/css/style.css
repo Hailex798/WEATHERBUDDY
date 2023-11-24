@@ -25,7 +25,7 @@ body {
   /* background-color: yellow; */
 }
 
-                                        /* --- NAVBAR ---  */
+                              /* --- NAVBAR ---  */
 .main_menu {
   background-color: var(--black);
   background: linear-gradient(
@@ -86,7 +86,7 @@ body {
   }
 }
 
-                                        /* --- HEADER ---  */
+                              /* --- HEADER ---  */
 .main_header_left {
   height: 50rem;
   display: flex;
@@ -130,6 +130,7 @@ body {
 }
 .main_header_left .wea_high {
   color: var(--main-color);
+  font-weight: 700;
 }
 .main_header_right {
   height: 50rem;
@@ -139,7 +140,7 @@ body {
   flex-direction: column;
 }
 
-                                        /* --- FOOTER ---  */
+                              /* --- FOOTER ---  */
 footer {
   background-color: var(--black);
   width: 100%;
@@ -149,13 +150,13 @@ footer {
   margin-top: auto;
 }
 
-                                        /* --- ERROR ---  */
+                              /* --- ERROR ---  */
 .errorImg img {
   height: 35rem;
   width: 100%;
 }
 
-                                        /* --- RESPONSIVE ---  */
+                              /* --- RESPONSIVE ---  */
 @media (max-width: 768px) {
   .main_header_left {
     height: 30rem;
@@ -186,133 +187,99 @@ footer {
   }
 }
 
-                                        /* --- WEATHER ---  */
-.height {
-  height: 100vh;
-}
-.form {
-  position: relative;
-}
-.form .fa-search {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  color: #9ca3af;
-}
-.form span {
-  position: absolute;
-  right: 17px;
-  top: 13px;
-  padding: 2px;
-  border-left: 1px solid #d1d5db;
-}
-.left-pan {
-  padding-left: 7px;
-}
-.left-pan i {
-  padding-left: 10px;
-}
-.form-input {
-  height: 55px;
-  text-indent: 33px;
-  border-radius: 10px;
-  width: 30rem;
-  font-size: 1.5rem;
-}
-.form-input:focus {
-  box-shadow: none;
-  border: none;
-}
-/* weather page style */
-/* temp input fields style code */
+                              /* --- WEATHER ---  */
 
+                   /* --- SEARCH BAR --- */
 .temp_form {
   width: 60%;
   position: relative;
   margin: 5rem auto;
+  text-align: center;
 }
-
 .temp_form input[type="text"] {
   width: 100%;
   padding: 2rem 5rem 2rem 2rem;
-  background: #1e202b;
-  color: white;
+  background: var(--white);
+  color: var(--black);
   outline: none;
-  border: none;
+  border: 2px solid #323544;
   font-size: 1.7rem;
-  border-radius: 3rem;
+  border-radius: 1rem;
+  height: 1.2rem;
 }
-
 ::placeholder {
-  color: #bfc1c8;
+  color: #000000;
+  font-size: 1.4rem;
 }
-
 .temp_form input[type="submit"] {
   position: absolute;
   top: 5px;
   right: 5px;
   bottom: 5px;
   border: none;
-  background: #009ad8;
+  background: #323544;
+  box-shadow: 17px 12px 38px 5px rgba(0, 0, 0, 0.445);
   padding: 0 3rem;
-  border-radius: 3rem;
+  border-radius: 0.8rem;
   color: white;
-  font-size: 1.6rem;
+  font-size: 1.2rem;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s all;
 }
-
+.temp_form input[type="submit"]:active{
+  transform: scale3d(0.6);
+  background-color: var(--main-color);
+  box-shadow: 1px 2px 20px 1px var(--main-color);
+  color: var(--white);
+}
 .temp_form input[type="submit"]:hover {
-  color: #009ad8;
-  background-color: #fff;
+  color: var(--white);
+  background-color: var(--main-color);
 }
 
-/* temp detials show here */
-
+                   /* --- TEMPATURE WINDOW --- */
 .tempInformation {
   width: 40rem;
   margin: auto;
   min-height: 20rem;
   background-color: #323544;
   border-radius: 1rem;
-  padding: 1rem;
   font-family: "Roboto", sans-serif;
 }
-
 .top_layer {
   width: 100%;
   height: 20%;
   background-color: #2d303d;
+  font-size: 1.6rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-radius: 1rem;
-  padding: 2rem 0;
+  padding-top: 1rem;
 }
-
 .top_layer p {
+  padding: 2rem;
   color: #fff;
   font-weight: 300;
 }
-
 .main_layer {
   width: 100%;
   height: 80%;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
 }
-
 .main_layer #city_name {
-  padding: 2rem 0;
   color: #bfc1c8;
   font-weight: 300;
   font-size: 2rem;
 }
-
 .main_layer .middle_layer {
   display: flex;
   justify-content: space-around;
   color: #fff;
 }
-
 .main_layer .middle_layer p,
 .main_layer .middle_layer .fa {
   font-size: 7rem;
