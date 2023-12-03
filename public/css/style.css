@@ -25,7 +25,7 @@ body {
   /* background-color: yellow; */
 }
 
-                              /* --- NAVBAR ---  */
+                                                      /* --- NAVBAR ---  */
 .main_menu {
   background-color: var(--black);
   background: linear-gradient(
@@ -86,7 +86,7 @@ body {
   }
 }
 
-                              /* --- HEADER ---  */
+                                                      /* --- HEADER ---  */
 .main_header_left {
   height: 50rem;
   display: flex;
@@ -140,7 +140,7 @@ body {
   flex-direction: column;
 }
 
-                              /* --- FOOTER ---  */
+                                                      /* --- FOOTER ---  */
 footer {
   background-color: var(--black);
   width: 100%;
@@ -150,46 +150,15 @@ footer {
   margin-top: auto;
 }
 
-                              /* --- ERROR ---  */
+                                                      /* --- ERROR ---  */
 .errorImg img {
   height: 35rem;
   width: 100%;
 }
 
-                              /* --- RESPONSIVE ---  */
-@media (max-width: 768px) {
-  .main_header_left {
-    height: 30rem;
-    margin-right: 0;
-  }
-  .ab {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-  .main_header_right {
-    height: auto;
-    margin: 2.8rem 0;
-  }
-  .temp_form {
-    width: auto;
-  }
-  .tempInformation {
-    width: auto;
-  }
+                                                      /* --- WEATHER ---  */
 
-  .main_layer .middle_layer p,
-  .main_layer .middle_layer .fa {
-    font-size: 5rem;
-    font-weight: 900;
-  }
-}
-
-                              /* --- WEATHER ---  */
-
-                   /* --- SEARCH BAR --- */
+                                  /* --- SEARCH BAR --- */
 .temp_form {
   width: 60%;
   position: relative;
@@ -227,7 +196,7 @@ footer {
   cursor: pointer;
   transition: 0.3s all;
 }
-.temp_form input[type="submit"]:active{
+.temp_form input[type="submit"]:active {
   transform: scale3d(0.6);
   background-color: var(--main-color);
   box-shadow: 1px 2px 20px 1px var(--main-color);
@@ -238,9 +207,9 @@ footer {
   background-color: var(--main-color);
 }
 
-                   /* --- TEMPATURE WINDOW --- */
+                                /* --- TEMPATURE WINDOW --- */
 .tempInformation {
-  width: 40rem;
+  width: 45rem;
   margin: auto;
   min-height: 20rem;
   background-color: #323544;
@@ -298,4 +267,35 @@ sup {
 .data_hide {
   visibility: hidden;
   transition: all 0.3s linear;
+}
+
+                                                      /* --- RESPONSIVE ---  */
+@media (max-width: 768px) {
+  .main_header_left {
+    height: 30rem;
+    margin-right: 0;
+  }
+  .ab {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .main_header_right {
+    height: auto;
+    margin: 2.8rem 0;
+  }
+  .temp_form {
+    width: auto;
+  }
+  .tempInformation {
+    width: auto;
+  }
+
+  .main_layer .middle_layer p,
+  .main_layer .middle_layer .fa {
+    font-size: 4.2rem;
+    font-weight: 900;
+  }
 }
